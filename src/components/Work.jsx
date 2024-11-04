@@ -151,63 +151,64 @@ const Work = () => {
         </div>
       </div>
 
-      <div className="py-4 ">
-        {/* Grid of boxes */}
-        <div className="flex space-x-8 justify-center ">
-          <div
-            onClick={() =>
-              openModal(
-                "By integrating a microphone for voice input and a touch screen for additional input, ANITA ensures a versatile and intuitive interaction method, aligning with the objective of  improving human-computer interaction."
-              )
-            }
-            className="p-10 max-w- bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
-          >
-            <h2>
-              <GrMicrophone size={40} />
-            </h2>
-            <p className="mt-2 text-gray-600">Enhanced Interaction</p>
-          </div>
-          <div
-            onClick={() =>
-              openModal(
-                "The use of Raspberry Pi 4 as the core processing unit with the integration of Open AI API provides sufficient computational power to handle complex AI tasks, meeting the objective of leveraging advanced AI capabilities."
-              )
-            }
-            className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
-          >
-            <h2>
-              <GrRaspberry size={40} />
-            </h2>
-            <p className="mt-2 text-gray-600">Efficient Processing</p>
-          </div>
-          <div
-            onClick={() =>
-              openModal(
-                "The design phase for ANITA focused on collecting user data to create an appealing interface, ensuring that the end product is aligned with user needs and preferences."
-              )
-            }
-            className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
-          >
-            <h2>
-              <GrUser size={40} />
-            </h2>
-            <p className="mt-2 text-gray-600">User-Centric Design</p>
-          </div>
-          <div
-            onClick={() =>
-              openModal(
-                "By incorporating feedback loops and iterative testing, the design ensures that ANITA evolves based on real-world usage and feedback, maintaining alignment with the objective of continuous enhancement and adaptability."
-              )
-            }
-            className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
-          >
-            <h2>
-              <GrOptimize size={40} />
-            </h2>
-            <p className="mt-2 text-gray-600">Continuous Improvement:</p>
-          </div>
-        </div>
-      </div>
+      <div className="py-4 text-left font-bold text-3xl">
+  {/* Grid of boxes */}
+  <div className="flex space-x-8 justify-center">
+    <div
+      onClick={() =>
+        openModal(
+          "By integrating a microphone for voice input and a touch screen for additional input, ANITA ensures a versatile and intuitive interaction method, aligning with the objective of improving human-computer interaction."
+        )
+      }
+      className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
+    >
+      <h2 className="flex justify-center items-center">
+        <GrMicrophone size={60} className="item" />
+      </h2>
+      <p className="mt-2 text-gray-600 text-center">Enhanced Interaction</p>
+    </div>
+    <div
+      onClick={() =>
+        openModal(
+          "The use of Raspberry Pi 4 as the core processing unit with the integration of Open AI API provides sufficient computational power to handle complex AI tasks, meeting the objective of leveraging advanced AI capabilities."
+        )
+      }
+      className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
+    >
+      <h2 className="flex justify-center items-center">
+        <GrRaspberry size={60} />
+      </h2>
+      <p className="mt-2 text-gray-600 text-center">Efficient Processing</p>
+    </div>
+    <div
+      onClick={() =>
+        openModal(
+          "The design phase for ANITA focused on collecting user data to create an appealing interface, ensuring that the end product is aligned with user needs and preferences."
+        )
+      }
+      className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
+    >
+      <h2 className="flex justify-center items-center">
+        <GrUser size={60} />
+      </h2>
+      <p className="mt-2 text-gray-600 text-center">User-Centric Design</p>
+    </div>
+    <div
+      onClick={() =>
+        openModal(
+          "By incorporating feedback loops and iterative testing, the design ensures that ANITA evolves based on real-world usage and feedback, maintaining alignment with the objective of continuous enhancement and adaptability."
+        )
+      }
+      className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
+    >
+      <h2 className="flex justify-center items-center">
+        <GrOptimize size={60} />
+      </h2>
+      <p className="mt-2 text-gray-600 text-center">Continuous Improvement</p>
+    </div>
+  </div>
+</div>
+
 
       {/* Modal */}
       {isOpen && (
