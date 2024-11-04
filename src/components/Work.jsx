@@ -22,10 +22,10 @@ const Work = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen p-4">
+    <div className="bg-gradient-to-tr from-purple-400 via-blue-300 to-pink-300 min-h-screen p-4">
       <div
         id="work"
-        className="bg-gray-900 text-gray-300 min-h-screen p-4 font-mono rounded-lg w-full md:w-auto"
+        className="bg-black bg-opacity-80 text-gray-300 min-h-screen p-16 rounded-3xl text-2xl leading-loose w-full md:w-auto"
       >
         <div className="mb-4">
           <span className="text-green-500">guest</span>
@@ -35,15 +35,15 @@ const Work = () => {
           <span className="text-yellow-500"> banner</span>
         </div>
         <div className="text-yellow-500 mb-4">
-          <pre className="whitespace-pre-wrap">
+          <pre className="whitespace-pre-wrap text-center leading-tight">
             {`
     _   _  _ ___ _____ _   
    /_\\ | \\| |_ _|_   _/_\\  
   / _ \\| .\` || |  | |/ _ \\ 
  /_/ \\_\\_|\\_|___| |_/_/ \\_\\
+                            v3.3.1
           `}
           </pre>
-          <div className="text-right">v3.3.1</div>
         </div>
         <div>
           <span className="text-green-500">guest</span>
@@ -76,16 +76,18 @@ const Work = () => {
             various organizational processes.
           </p>
 
-          <div className="bg-gray-800 text-white p-4 my-6 rounded-lg shadow-lg">
-            <div className="flex justify-center my-4">
+          <div className="flex flex-col items-center bg-gradient-to-tr from-purple-500 via-white to-blue-300 bg-opacity 20 rounded-xl p-4">
+            <div className="flex justify-center my-4 ">
+
               <img
                 src="https://i.ibb.co/PD3yN74/image.webp"
                 alt="image"
-                className="rounded-lg shadow-lg"
-                style={{ width: "420px", height: "auto" }}
+                className="rounded-lg shadow-lg relative z-10 w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
+                style={{all:"revert", width: "500px", height: "auto" }}
+                
               />
             </div>
-            <p className="text-center">ANITA ver 4.0.0</p>
+            <p className="text-center font-semibold text-black">ANITA ver 4.0.0</p>
           </div>
 
           <p>
@@ -151,14 +153,14 @@ const Work = () => {
 
       <div className="py-4 ">
         {/* Grid of boxes */}
-        <div className="flex space-x-4 justify-center ">
+        <div className="flex space-x-8 justify-center ">
           <div
             onClick={() =>
               openModal(
                 "By integrating a microphone for voice input and a touch screen for additional input, ANITA ensures a versatile and intuitive interaction method, aligning with the objective of  improving human-computer interaction."
               )
             }
-            className="p-10 w-60 bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
+            className="p-10 max-w- bg-white rounded-lg shadow-md cursor-pointer hover:bg-blue-500 hover:text-white hover:shadow-xl hover:-translate-y-1 transform transition duration-300"
           >
             <h2>
               <GrMicrophone size={40} />
